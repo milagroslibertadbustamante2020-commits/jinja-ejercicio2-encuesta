@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Resultados{% endblock %}
+{% block content %}
+<h1>Resultados de tu encuesta</h1>
+<ul>
+    <li>Lenguaje favorito: <strong>{{ lenguaje }}</strong></li>
+    <li>Años de experiencia: <strong>{{ experiencia }}</strong></li>
+    <li>Editor favorito: <strong>{{ editor }}</strong></li>
+</ul>
+<a href="{{ url_for('index') }}">Responder otra vez</a>
+{% endblock %}
